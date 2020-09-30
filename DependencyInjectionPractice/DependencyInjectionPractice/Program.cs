@@ -12,6 +12,7 @@ namespace DependencyInjectionPractice
         static void Main(string[] args)
         {
             Container.GetServices<IProcess>().ToList().ForEach(p => p.Process());
+            Console.WriteLine("Processing Done...");
         }
     }
 }
